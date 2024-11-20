@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Teal accent colors -->
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryVariant">#00796B</color>
+    <color name="colorSecondary">#009688</color>
+    <color name="colorSecondaryVariant">#00796B</color>
+
+    <!-- Minimalist black and white colors -->
+    <color name="backgroundColor">#FFFFFF</color> <!-- White background -->
+    <color name="surfaceColor">#FFFFFF</color>
+    <color name="textColorTitle">#FFFFFF</color> <!-- White text -->
+    <color name="textColorPrimary">#000000</color> <!-- Black text -->
+    <color name="textColorSecondary">#000000</color> <!-- Grey text -->\
+    <color name="iconTintColor">#000000</color>
+
+    <!-- Common colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#808080</color>
+</resources>

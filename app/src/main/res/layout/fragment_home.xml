@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/android:colorBackground"
+    tools:context=".ui.home.HomeFragment">
+
+    <!-- Container for buttons and visualization controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:background="?attr/android:colorBackground">
+
+        <!-- Existing Buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCompleteMPHQ9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complete Assessment"
+            android:padding="16dp"
+            android:textSize="16sp"
+            app:cornerRadius="8dp"
+            app:icon="@drawable/ic_baseline_assignment_24"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            style="@style/Button.Wellscreen"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Data"
+            android:padding="16dp"
+            android:textSize="16sp"
+            app:cornerRadius="8dp"
+            app:icon="@drawable/baseline_visibility_24"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            android:layout_marginBottom="16dp"
+            style="@style/Button.Wellscreen"/>
+
+        <!-- New Controls for Data Visualization -->
+
+        <!-- Spinner for Data Type Selection -->
+        <Spinner
+            android:id="@+id/spinnerDataType"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/data_types"
+            android:popupBackground="@color/grey"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Spinner for Time Period Selection -->
+        <Spinner
+            android:id="@+id/spinnerTimePeriod"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/time_periods"
+            android:popupBackground="@color/grey"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Button to Generate Chart -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGenerateChart"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Generate Chart"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp" />
+
+        <!-- ProgressBar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <!-- Line Chart -->
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="360dp" />
+
+    </LinearLayout>
+</LinearLayout>

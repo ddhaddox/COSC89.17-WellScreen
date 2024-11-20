@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Screen Status -->
+    <TextView
+        android:id="@+id/textViewScreenStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Screen ON/OFF"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <!-- Timestamp -->
+    <TextView
+        android:id="@+id/textViewTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YYYY-MM-DD HH:MM:SS"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="4dp" />
+</LinearLayout>

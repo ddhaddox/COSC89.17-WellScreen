@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ScrollView for Content -->
+    <ScrollView
+        android:id="@+id/scrollViewInsights"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        android:background="#FFFFFF"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Content Layout -->
+        <LinearLayout
+            android:id="@+id/linearLayoutInsights"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Time Range Selection Section -->
+            <TextView
+                android:id="@+id/textViewTimeRangeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Time Range"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#000000"
+                android:padding="12dp"
+                android:elevation="2dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerTimeRange"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="16dp"
+                android:textColor="@color/black"
+                android:popupBackground="@color/grey"
+                android:spinnerMode="dropdown" />
+
+            <!-- Descriptive Statistics Section -->
+            <TextView
+                android:id="@+id/textViewDescriptiveStatsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descriptive Statistics"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#000000"
+                android:padding="12dp"
+                android:elevation="2dp"/>
+
+            <!-- Descriptive Statistics Content -->
+            <TextView
+                android:id="@+id/textViewDescriptiveStats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Contemporaneous Analyses Section -->
+            <TextView
+                android:id="@+id/textViewContemporaneousAnalysesTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contemporaneous Analyses and Visualizations"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#000000"
+                android:padding="12dp"
+                android:elevation="2dp"/>
+
+            <!-- Feature Selection Spinner -->
+            <Spinner
+                android:id="@+id/spinnerFeatureSelection"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="16dp"
+                android:textColor="@color/black"
+                android:popupBackground="@color/grey"
+                android:spinnerMode="dropdown" />
+
+            <!-- Line Chart -->
+            <TextView
+                android:id="@+id/textViewLineChartTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trends Over Time"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:padding="16dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="16dp" />
+
+            <!-- Scatter Chart -->
+            <TextView
+                android:id="@+id/textViewScatterChartTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correlation Analysis"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:padding="16dp" />
+
+            <com.github.mikephil.charting.charts.CombinedChart
+                android:id="@+id/combinedChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="16dp" />
+
+            <!-- Bar Chart for Contemporaneous Regression Coefficients (Added) -->
+            <TextView
+                android:id="@+id/textViewBarChartTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Regression Coefficients"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:visibility="gone"
+                android:padding="16dp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:visibility="gone"
+                android:layout_margin="16dp" />
+
+            <!-- Correlation Results -->
+            <TextView
+                android:id="@+id/textViewContemporaneousCorrelationsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correlation Results"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/textViewContemporaneousCorrelations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Lagged Analyses Section -->
+            <TextView
+                android:id="@+id/textViewLaggedAnalysesTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lagged Analyses"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#000000"
+                android:padding="12dp"
+                android:elevation="2dp"/>
+
+            <!-- Lagged Feature Selection Spinner -->
+            <Spinner
+                android:id="@+id/spinnerLaggedFeatureSelection"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="16dp"
+                android:textColor="@color/black"
+                android:popupBackground="@color/grey"
+                android:spinnerMode="dropdown" />
+
+            <!-- Lagged Line Chart -->
+            <TextView
+                android:id="@+id/textViewLaggedLineChartTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lagged Trends Over Time"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:padding="16dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChartLagged"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="16dp" />
+
+            <!-- Lagged Scatter Chart -->
+            <TextView
+                android:id="@+id/textViewLaggedScatterChartTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lagged Correlation Analysis"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:padding="16dp" />
+
+            <com.github.mikephil.charting.charts.CombinedChart
+                android:id="@+id/combinedChartLagged"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="16dp" />
+
+            <!-- Bar Chart for Lagged Regression Coefficients (Added) -->
+            <TextView
+                android:id="@+id/textViewLaggedBarChartTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lagged Regression Coefficients"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textColor="#000000"
+                android:padding="16dp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChartLagged"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="16dp" />
+
+            <!-- Lagged Correlation Results -->
+            <TextView
+                android:id="@+id/textViewLaggedCorrelationsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lagged Correlation Results"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/textViewLaggedCorrelations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Actionable Insights Section -->
+            <TextView
+                android:id="@+id/textViewInsightsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Actionable Insights"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#000000"
+                android:padding="12dp"
+                android:elevation="2dp"/>
+
+            <TextView
+                android:id="@+id/textViewInsights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

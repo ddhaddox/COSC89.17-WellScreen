@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WellScreen</string>
+    <string name="title_home">Home</string>
+    <string name="title_insights">Insights</string>
+    <string name="title_settings">Settings</string>
+    <string name="app_icon">App Icon</string>
+
+    <string-array name="time_range_options">
+        <item>Today</item>
+        <item>Last 7 Days</item>
+        <item>Last 30 Days</item>
+        <item>Custom</item>
+    </string-array>
+
+    <string-array name="time_range_options_insights">
+        <item>Forever</item>
+        <item>Last Year</item>
+        <item>Last 30 Days</item>
+        <item>Last 7 Days</item>
+        <item>Today</item>
+        <item>Custom</item>
+    </string-array>
+
+    <!-- Data Types -->
+    <string-array name="data_types">
+        <item>Total Screen Time</item>
+        <item>Depression Assessment Average Scores</item>
+    </string-array>
+
+    <!-- Time Periods -->
+    <string-array name="time_periods">
+        <item>Past Week</item>
+        <item>Past Month</item>
+        <item>Past Year</item>
+    </string-array>
+
+    <!-- Introduction -->
+    <string name="data_policy_intro_header">Data Policy</string>
+    <string name="data_policy_intro_content">
+        <![CDATA[
+        Welcome to WellScreen! This data policy explains what data we collect, how we collect it, how we store it, how we use it, and how you have control over it.
+        ]]>
+    </string>
+
+    <!-- Data We Collect -->
+    <string name="data_policy_data_we_collect_header">Data We Collect</string>
+    <string name="data_policy_data_we_collect_content">
+        <![CDATA[
+        <h3>1. App Usage Data</h3>
+        <p><b>What We Collect:</b> Information about your app usage, including which apps you use and for how long.</p>
+        <p><b>Details:</b></p>
+        <ul>
+            <li>Per-App Usage: Total time you spend on each app per day.</li>
+            <li>Category Usage: Total time you spend on categories of apps per day (e.g., Social, Productivity).</li>
+        </ul>
+        <p><b>How We Collect It:</b> Using your device&apos;s Usage Stats, we monitor app foreground activity.</p>
+
+        <br>
+        <h3>2. Screen On/Off Events</h3>
+        <p><b>What We Collect:</b> Times when your screen turns on and off.</p>
+        <p><b>How We Collect It:</b> By listening to system events that occur when you turn your screen on or off.</p>
+
+        <br>
+        <h3>3. Total Screen Time</h3>
+        <p><b>What We Collect:</b> The total amount of time your screen is active each day.</p>
+        <p><b>How We Collect It:</b> Calculated from screen on/off events and app usage data.</p>
+
+        <br>
+        <h3>4. Mood Assessments (MPHQ-9 Questionnaire)</h3>
+        <p><b>What We Collect:</b> Your responses to the MPHQ-9 mood assessment questionnaire.</p>
+        <p><b>Details:</b></p>
+        <ul>
+            <li>Individual question scores (ranging from 0 to 100).</li>
+            <li>Average score calculated from your responses.</li>
+        </ul>
+        <p><b>How We Collect It:</b> When you voluntarily complete the questionnaire within the app.</p>
+        ]]>
+    </string>
+
+    <!-- How We Store Your Data -->
+    <string name="data_policy_how_we_store_your_data_header">How We Store Your Data</string>
+    <string name="data_policy_how_we_store_your_data_content">
+        <![CDATA[
+        All your data is stored locally on your device using an encrypted database. We do not transmit your data over the internet or store it on external servers.
+        ]]>
+    </string>
+
+    <!-- How We Use Your Data -->
+    <string name="data_policy_how_we_use_your_data_header">How We Use Your Data</string>
+    <string name="data_policy_how_we_use_your_data_content">
+        <![CDATA[
+        <p><b>Data Trends/Visualizations:</b> To provide you with detailed reports and charts on your app usage, screen time, and mood patterns.</p>
+        <p><b>Correlation Analyses:</b> Analyzing the relationship between your app usage/screen time and your mood assessments to identify potential impacts on your well-being.</p>
+        ]]>
+    </string>
+
+    <!-- Data Retention -->
+    <string name="data_policy_data_retention_header">Data Retention</string>
+    <string name="data_policy_data_retention_content">
+        <![CDATA[
+        <p><b>Automatic Deletion:</b> You can choose how long we keep your data. The options include:</p>
+        <ul>
+            <li> One Week</li>
+            <li> One Month</li>
+            <li> Three Months</li>
+            <li> Six Months</li>
+            <li> One Year</li>
+            <li> Never (data is kept indefinitely unless you choose to delete it)</li>
+        </ul>
+        <p><b>Customization:</b> Set your preferred data retention period in the app settings.</p>
+        <p><b>Old Data Deletion:</b> Data older than your selected retention period will be automatically deleted from your device.</p>
+        ]]>
+    </string>
+
+    <!-- Permissions We Require -->
+    <string name="data_policy_permissions_we_require_header">Permissions We Require</string>
+    <string name="data_policy_permissions_we_require_content">
+        <![CDATA[
+        <p><b>Usage Access Permission:</b> To collect app usage statistics.</p>
+        <p><b>Battery Optimization Exemption:</b> To ensure the app runs smoothly in the background without being stopped by the system.</p>
+        <p><b>Foreground Service Permission</b> (Android 14 and above): To collect screen on/off data.</p>
+        <p><b>Notifications Permission</b>: To remind you to complete depression symptom assessments.</p>
+        ]]>
+    </string>
+
+    <!-- User Control -->
+    <string name="data_policy_user_control_header">User Control</string>
+    <string name="data_policy_user_control_content">
+        <![CDATA[
+        <p><b>Manage Permissions:</b> You can enable or disable permissions at any time through your device settings.</p>
+        <p><b>Data Deletion:</b> You can manually delete data for any days of your choice, and you can customize data retention settings to your preference.</p>
+        <p><b>Add Custom Data:</b> You can manually add data entities to the app database. If you&apos;re adding data for a day, it may be helpful to delete existing data for the day to avoid overlap.</p>
+        ]]>
+    </string>
+</resources>
